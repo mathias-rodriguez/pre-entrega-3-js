@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaShit</title>
+    <link rel="stylesheet" href="css/stylo.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/img/ds-triangulo.png" alt="Logo de la marca" />
+        </a>
+      </div>
+      <div id="verCarrito" class="ver-carrito">
+        <img src="./assets/img/shopping-cart.png" alt="carrito" />
+      </div>
+    </header>
+    <main>
+      <h1>Welcome</h1>
+      <input type="text" name="" id="filter-input" />
+      <section id="cardsShop" class="cards-shop"></section>
+      <div id="carrito"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Artista</th>
+            <th>Album</th>
+            <th>Unidades</th>
+            <th>Precio por unidad</th>
+            <th>Precio total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot id="totales"></tfoot>
+      </table>
+    </main>
+    <footer></footer>
+    <script type="module" src="./db/productos.js"></script>
+    <script type="module" src="./js/inicio.js"></script>
+    <script type="module" src="./js/carrito.js"></script>
+  </body>
+</html>
